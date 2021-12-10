@@ -1,0 +1,194 @@
+body{
+
+background-color: seagreen;
+}
+
+
+.carta {
+    position: absolute;
+    height: 220px;
+    width: 150px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+    border: 2px solid black;
+	left: 600px;
+	top: 300px;
+}
+
+.numeropalo {
+    font-size: 25px;
+}
+
+.invertido {
+
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 25px;
+    
+}
+
+.figura {
+    position: absolute;
+    font-size: 70px;
+}
+
+#picas {
+	z-index: 3;
+	animation-name: picas;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	
+}
+
+#picas4_1 {
+    left: 25px;
+    top: 10px
+}
+
+#picas4_2 {
+    left: 90px;
+    top: 10px;
+}
+
+#picas4_3 {
+    left: 25px;
+    top: 140px;
+    transform: rotate(180deg);
+}
+
+#picas4_4 {
+	 left: 90px;
+    top: 140px;
+    transform: rotate(180deg);
+}
+
+#trebol{
+	z-index: 1;
+	animation-name: treboles;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+
+#t7_1 {
+
+	left: 20px;
+  	top: 0px;
+}
+
+#t7_2 {
+
+	left: 85px;
+  	top: 0px;
+
+}
+
+#t7_3 {
+	left: 52px;
+	top: 50px;
+
+}
+
+#t7_4 {
+	left: 20px;
+	top: 90px;
+}
+
+#t7_5 {
+	left: 85px;
+	top: 90px;
+}
+
+#t7_6 {
+	left: 20px;
+	top: 150px;
+	transform: rotate(180deg);
+	
+}
+
+#t7_7 {
+	left: 85px;
+	top: 150px;
+	transform: rotate(180deg);
+
+}
+
+
+#corazones {
+	z-index: 2;
+	color: red;
+	animation-name: corazones;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	
+}
+
+#c6_1 {
+left: 20px;
+  	top: 0px;
+}
+
+#c6_2 {
+	left: 85px;
+  	top: 0px;
+}
+
+#c6_3 {
+	left: 20px;
+	top: 70px;
+}
+
+#c6_4 {
+	left: 85px;
+	top: 70px;
+	
+}
+
+#c6_5 {
+	left: 20px;
+	top: 140px
+}
+
+#c6_6 {
+	left: 85px;
+	top: 140px;
+}
+
+#diamantes {
+	z-index: 4;
+	color: red;
+	animation-name: as_diamantes;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+#d1_1 {
+	left: 45px;
+	top: 65px;
+}
+
+@keyframes as_diamantes {
+	0% {left: 600px;top: 300px;}
+	100% {transform: rotate(-30deg);left: 500px;top: 350px;}
+}
+
+@keyframes picas {
+	0% {left: 600px;top: 300px;}
+	100% {transform: rotate(-10deg);left: 600px;}
+}
+
+@keyframes corazones {
+	0% {left: 600px;top: 300px;}
+	100% {transform: rotate(20deg);left: 700px;top: 310px;}
+}
+
+@keyframes treboles {
+	0% {left: 600px;top: 300px;}
+	100% {transform: rotate(40deg);left: 820px;top: 370px;}
+}
